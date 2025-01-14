@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    /* Fonts */
+    --ff-main: 'Inter';
+    --fw-light: 400;
+    --fw-mid: 600;
+    --fw-bold: 700;
+    --font-size: 0.875rem;
+
+    /* Colors */
+    --clr-green: hsl(75, 94%, 57%);
+    --clr-white:  hsl(0, 0%, 100%);
+    --clr-grey-700: hsl(0, 0%, 20%);
+    --clr-grey-800: hsl(0, 0%, 12%);
+    --clr-grey-900: hsl(0, 0%, 8%);
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+  html {
+    height: 100%;
+    background-color: var(--clr-grey-900);
+    font-size: var(--font-size);
+    font-family: var(--ff-main);
+  }
+  body {
+    height: 100%;
+    display: grid;
+    place-content: center;
+    text-align: center;
+  }
+  main {
+    display: grid;
+    background-color: var(--clr-grey-800);
+    padding: 2rem;
+    padding-bottom: 1.5rem;
+    border-radius: 1rem;
+  }
+  img {
+    justify-self: center;
+    width: 80px;
+    border-radius: 50%;
+  }
+  .profile__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    color: var(--clr-white);
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    font-weight: var(--fw-mid);
+  }
+  h2 {
+    color: var(--clr-green);
+    font-weight: var(--fw-mid);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    color: var(--clr-white);
+    font-weight: var(--fw-light);
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+  }
+.profile__social-link-button {
+    border: transparent;
+    color: var(--clr-white);
+    background-color: var(--clr-grey-700);
+    font-weight: var(--fw-bold);
+    margin-bottom: 1rem;
+    padding: .8rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.profile__social-link-button:hover {
+    background-color: var(--clr-green);
+    color: var(--clr-grey-900);
+}
+@media (min-width:440px) {
+    main {
+        min-width: 340px;
+    }
+}
